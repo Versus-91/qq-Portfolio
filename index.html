@@ -50,23 +50,8 @@
                 </div>
             </div>
         </nav>
-        <section class="hero is-link ">
-            <div class="hero-body">
-                <div class="container">Hello! I am
-                    <h1 class="title is-1">
-                        Qader Qaribiyan
-                    </h1>
-                    <h2 class="subtitle is-3">
-                        Full-Stack Developer
-                    </h2>
-                </div>
-            </div>
-        </section>
         <section class="section roboto" id="portfolio">
             <div class="container">
-                <div class="section-heading mb-1">
-                    <h1 class="subtitle is-5">My latest works</h1>
-                </div>
                 <p class="subtitle is-5 mb-1">Filters:</p>
                 <button @click="setTag('Web')" :class="tag == 'Web'? 'is-active' : ''"
                     class="button mr-2 is-light my-3">Web</button>
@@ -96,7 +81,7 @@
                                     <a :href="card.previewLink" class="card-footer-item">{{ card.previewLink === '#'
                                         ?'Not available' : 'Demo' }}</a>
                                     <a :href="card.sourceLink" class="card-footer-item">{{card.sourceLink === '#'
-                                        ?"Not available" :'Github reository'}}</a>
+                                        ?"Not available" :'Github repository'}}</a>
                                 </footer>
                             </div>
                         </div>
