@@ -44,6 +44,7 @@
                     <a class="navbar-item" href="#portfolio">
                         <span class="icon">
                             <i class="fas fa-th-list"></i>
+
                         </span>
                         <span>Portfolio</span>
                     </a>
@@ -61,7 +62,7 @@
                 <br>
                 <div class="container portfolio-container">
                     <div class="columns is-multiline">
-                        <div class="column is-4" v-for="card in currentCards" :key="card.title">
+                        <div class="column is-12" v-for="card in currentCards" :key="card.title">
                             <div class="card">
                                 <header class="card-header">
                                     <p class="card-header-title">
@@ -72,16 +73,23 @@
                                     </p>
                                 </header>
                                 <div class="card-content">
-                                    <figure class="image">
-                                        <img :src="card.palceholderImage" alt="Placeholder">
-                                    </figure>
-                                    <span v-html="card.description"></span>
+                                    <div class="columns">
+                                        <div class="column is-10"> <span v-html="card.description"></span>
+                                        </div>
+                                        <div class="column is-2">
+                                            <figure class="image">
+                                                <img :src="card.palceholderImage" alt="Placeholder">
+                                            </figure>
+                                        </div>
+
+                                    </div>
+
                                 </div>
                                 <footer class="card-footer">
                                     <a :href="card.previewLink" class="card-footer-item">{{ card.previewLink === '#'
                                         ?'Not available' : 'Demo' }}</a>
                                     <a :href="card.sourceLink" class="card-footer-item">{{card.sourceLink === '#'
-                                        ?"Not available" :'Github repository'}}</a>
+                                        ?"Not available" :'Source'}}</a>
                                 </footer>
                             </div>
                         </div>
