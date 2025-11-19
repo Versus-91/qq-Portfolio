@@ -2,7 +2,6 @@
   <UApp>
     <UHeader>
       <template #title>
-        <Logo class="h-5 w-auto"></Logo>
       </template>
       <UNavigationMenu :items="items" />
       <template #right>
@@ -31,13 +30,13 @@ const carousel_items = [
 
 const items = computed<NavigationMenuItem[]>(() => [
   {
-    label: 'Home',
-    to: '/home',
-    active: route.path.startsWith('/home')
+    label: 'Projects',
+    to: '/',
+    active: route.path == '/'
   },
   {
-    label: 'Components',
-    to: '#cv',
+    label: 'Resume',
+    to: '/',
     active: route.path.startsWith('/docs/components')
   },
   {

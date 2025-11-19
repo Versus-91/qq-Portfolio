@@ -1,11 +1,11 @@
 <template>
     <UContainer class="mt-4">
-        <UCard v-for="item in works_content"class="my-2">
+        <UCard v-for="item in works_content" class="my-2">
             <template #header class="dark:bg-white">
-                <Placeholder class="h-5 ">{{ item.title }}</Placeholder>
+                <div class="h-5 ">{{ item.title }}</div>
             </template>
             <template #default>
-              {{item.description}}
+                {{ item.description }}
                 <h2 class="my-2 text-lg font-medium text-heading">Features</h2>
                 <ul class="space-y-4 text-left text-body">
                     <li class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -27,12 +27,13 @@
                 <UButton color="neutral" variant="outline">Soure</UButton>
             </template>
         </UCard>
+        <Resume />
     </UContainer>
 </template>
 <script setup lang="ts">
-interface CardInfo{
-title:string,
-description:string,
+interface CardInfo {
+    title: string,
+    description: string,
 
 }
 const works_content =
