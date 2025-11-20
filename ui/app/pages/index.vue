@@ -1,41 +1,51 @@
 <template>
     <UContainer class="mt-4">
-        <UCard v-for="item in works_content" class="my-2">
+        <UCard v-for="item in works_content" class="my-4">
             <template #header class="dark:bg-white">
-                <div class="h-5 ">{{ item.title }}</div>
+                <div class="h-5 font-bold">{{ item.title }}</div>
             </template>
             <template #default>
-                {{ item.description }}
-                <h2 class="my-2 text-lg font-medium text-heading">Features</h2>
-                <ul class="space-y-4 text-left text-body">
-                    <li class="flex items-center space-x-3 rtl:space-x-reverse">
-                        <svg class="w-4 h-4 text-fg-success shrink-0 me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span>
-                            Bulma CSS
-                        </span>
-                    </li>
-                    <li>Plotly.js</li>
-                    <li class="text-body text-success">Technologies: Vue.js 3, Bulma CSS, Scikit-learn, Plotly.js </li>
-                </ul>
+                <div class="flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/3">
+                        {{ item.description }}
+                        <h2 class="mt-2 text-lg font-medium text-heading">Features</h2>
+                        <ul class="text-left text-body  list-disc pl-5">
+                            <li>
+                                <span>
+                                    Bulma CSS
+                                </span>
+                            </li>
+                            <li>Plotly.js</li>
+                            <li class="text-body"><span class="font-bold">Technologies:</span> Vue.js 3, Bulma
+                                CSS,
+                                Scikit-learn, Plotly.js </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/3 justify-center">
+                        <UCarousel v-slot="{ item }" arrows :items="items" class="w-full max-w-xs mx-auto ">
+                            <img :src="item" class="rounded-lg">
+                        </UCarousel>
+                    </div>
+                </div>
             </template>
             <template #footer>
-                <UButton color="neutral" variant="outline" class="mx-1 dark:text-gray-400 dark:bg-white">Demo</UButton>
-                <UButton color="neutral" variant="outline">Soure</UButton>
+                <UButton color="neutral" icon="i-lucide-square-code" variant="outline"
+                    class="mx-1 dark:text-white-400 ">Source</UButton>
+                <UButton color="primary" icon="i-lucide-play" variant="outline">Demo</UButton>
             </template>
         </UCard>
         <Resume />
     </UContainer>
 </template>
 <script setup lang="ts">
-interface CardInfo {
-    title: string,
-    description: string,
-
-}
+const items = [
+    'https://picsum.photos/640/640?random=1',
+    'https://picsum.photos/640/640?random=2',
+    'https://picsum.photos/640/640?random=3',
+    'https://picsum.photos/640/640?random=4',
+    'https://picsum.photos/640/640?random=5',
+    'https://picsum.photos/640/640?random=6'
+]
 const works_content =
     [
         {

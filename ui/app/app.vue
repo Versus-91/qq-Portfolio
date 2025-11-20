@@ -38,11 +38,6 @@ const items = computed<NavigationMenuItem[]>(() => [
     label: 'Resume',
     to: '/',
     active: route.path.startsWith('/docs/components')
-  },
-  {
-    label: 'Github',
-    to: 'https://github.com/Versus-91',
-    target: '_blank',
   }
 ])
 </script>
