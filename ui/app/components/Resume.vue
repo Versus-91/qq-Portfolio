@@ -53,7 +53,7 @@
                     </li>
                 </ul>
             </Experience>
-            <Experience :title="'B.Sc. in Software Engineering, Imam Reza University'" :date="'13.2013 - 09.2017'">
+            <Experience :title="'B.Sc. in Software Engineering, Imam Reza University'" :date="'12.2013 - 09.2017'">
             </Experience>
         </template>
     </UCard>
