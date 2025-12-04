@@ -59,14 +59,14 @@ const works_content =
             stack: "Vue.js 3, Pyodide, Bulma CSS, Scikit-learn, Plotly.js, HighCharts, TensorFlow.js",
             sourceLink: '',
             tags: ['Web', 'Machine Learning'],
-            palceholderImage: 'images/logo.png'
+            placeHolderImage: 'images/logo.png'
         },
         {
             title: 'Realtor App',
-            description: `A full-stack real estate management platform with a web frontend built in Vue.js, a ASP.NET Core 8 backend, and a SQL Server database.`,
+            description: `A full-stack real estate management platform with a web frontend built in Vue.js, ASP.NET Core 8, and a SQL Server database.`,
             previewLink: 'https://card-decks.azurewebsites.net/',
             sourceLink: 'https://github.com/Versus-91/RealtorSuite',
-            stack: "ASP.NET Core 8, abp, Vue.js 2, SLQ Server, Swagger UI, Bulma CSS, Bootstrap 4",
+            stack: "ASP.NET Core 8, ABP, Vue.js 2, SQL Server, Swagger UI, Bulma CSS, Bootstrap 4",
             features: ["ASP.NET 8 backend development for property listing platform",
                 "RESTful API design with JWT authentication and authorization",
                 "Azure cloud deployment: App Service, SQL Database, Key Vault",
@@ -79,7 +79,7 @@ const works_content =
             tags: ['Web'],
             images: ['https://carddecks.blob.core.windows.net/portfolio/Home.jpg', 'https://carddecks.blob.core.windows.net/portfolio/show.jpg'
             ],
-            palceholderImage: 'images/t.webp'
+            placeHolderImage: 'images/t.webp'
         },
         {
             title: 'TDD app with Django 5.0',
@@ -90,7 +90,7 @@ const works_content =
                 "Test-Driven Development methodology using pytest test suite",
                 "Selenium automated browser testing for end-to-end validation",
                 "Unit tests for models, views, and forms"],
-            palceholderImage: 'images/map.png',
+            placeHolderImage: 'images/map.png',
             sourceLink: "https://github.com/Versus-91/PYTDD",
             tags: ['Web']
         },
@@ -105,14 +105,14 @@ const works_content =
                 "Benchmarked the methods on 8 public datasets and 12 ML models"],
             stack: "scikit-learn, pandas, matplot, XGBoost",
             sourceLink: 'https://github.com/Versus-91/blackboxofmachinelearning',
-            palceholderImage: 'images/t.webp',
+            placeHolderImage: 'images/t.webp',
             tags: ['Deep Learning']
         },
         {
             title: 'Data Visualizations with D3',
             stack: "D3.js",
             description: `Used D3 to create Data Visualizations for public datasets as part of Data Visualization class at TU Dresden.`,
-            palceholderImage: 'images/map.png',
+            placeHolderImage: 'images/map.png',
             tags: ['Web']
         },
         {
@@ -120,20 +120,20 @@ const works_content =
             description: `Improved model accuracy for cancer detection in whole slide images by designing a distance-aware Vision Transformer (ViT) that incorporated spatial relationships between patches into the self-attention mechanism.
                         `,
             previewLink: '',
-            palceholderImage: 'images/t.webp',
+            placeHolderImage: 'images/t.webp',
             stack: "PyTorch",
             sourceLink: 'https://github.com/Versus-91/SpatiallyAwareTransformerNetwork',
             tags: ['Deep Learning']
         }
         , {
-            title: 'Deep Reinforcement Learning Pac-man',
-            description: `Using Deep Reinforcement Learning models to learn how to play Pac-man based on
+            title: 'Deep Reinforcement Learning Pac-Man',
+            description: `Using Deep Reinforcement Learning models to learn how to play Pac-Man based on
                                 interaction wiith the game
                                 and feedback received.`,
             previewLink: '',
             stack: "PyTorch, Pygame",
             sourceLink: 'https://github.com/Versus-91/pacman_final',
-            palceholderImage: 'images/drl.webp',
+            placeHolderImage: 'images/drl.webp',
             tags: ['Deep Learning']
         },
     ];

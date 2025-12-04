@@ -7,7 +7,7 @@
       <UNavigationMenu v-model="activeNavMenu" color="info" :items="items" />
       <template #right>
         <UColorModeButton></UColorModeButton>
-        <UButton color="neutral" variant="ghost" to="https://github.com/nuxt/ui" target="_blank"
+        <UButton color="neutral" variant="ghost" to="https://github.com/Versus-91" target="_blank"
           icon="i-simple-icons-github" aria-label="GitHub" />
         <UButton color="neutral" variant="ghost" to="https://www.linkedin.com/in/qader-qaribiyan/" target="_blank"
           icon="i-simple-icons-linkedin" aria-label="LinkedIn" />
