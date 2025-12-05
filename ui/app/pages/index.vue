@@ -109,9 +109,12 @@ const works_content =
         },
         {
             title: 'Data Visualizations with D3',
-            stack: "D3.js",
+            stack: "JavaScript, D3.js",
             description: `Used D3 to create Data Visualizations for public datasets as part of Data Visualization class at TU Dresden.`,
             placeHolderImage: 'images/map.png',
+            images: ['https://carddecks.blob.core.windows.net/portfolio/pcp.png', 'https://carddecks.blob.core.windows.net/portfolio/para.webp'
+                , 'https://carddecks.blob.core.windows.net/portfolio/map.png'],
+            features: ["Force Directed Graph", "Parallel Coordinate Plot", "US Airports Visualization"],
             tags: ['Web']
         },
         {
@@ -122,6 +125,7 @@ const works_content =
             placeHolderImage: 'images/t.webp',
             stack: "PyTorch",
             sourceLink: 'https://github.com/Versus-91/SpatiallyAwareTransformerNetwork',
+
             tags: ['Deep Learning']
         }
         , {
