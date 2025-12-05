@@ -36,7 +36,6 @@
                     Demo</UButton>
             </template>
         </UCard>
-        <Resume />
     </UContainer>
 </template>
 <script setup lang="ts">
