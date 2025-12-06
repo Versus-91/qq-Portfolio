@@ -13,7 +13,7 @@
           icon="i-simple-icons-linkedin" aria-label="LinkedIn" />
       </template>
     </UHeader>
-    <NuxtPage>
+    <NuxtPage ref="nav">
     </NuxtPage>
   </UApp>
 
@@ -21,13 +21,38 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
 
-let activeNavMenu = ref('Projects')
-const route = useRoute()
+let activeNavMenu = ref('Projects');
+
+const childRef = useTemplateRef('nav')
+
 const items = computed<NavigationMenuItem[]>(() => [
   {
     label: 'Projects',
     to: '/',
-    active: activeNavMenu.value == 'Projects'
+    active: activeNavMenu.value == 'Projects',
+    onSelect(e) {
+      activeNavMenu.value = 'Projects';
+      const element = document.getElementById("projects");
+      element?.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, {
+    label: 'About me',
+    to: '/',
+    active: activeNavMenu.value == 'About',
+    onSelect(e) {
+      activeNavMenu.value = 'About';
+      const element = document.getElementById("about");
+      element?.scrollIntoView({ behavior: 'smooth' });
+    },
+  }, {
+    label: 'Resume',
+    to: '/',
+    active: activeNavMenu.value == 'Resume',
+    onSelect(e) {
+      activeNavMenu.value = 'Resume';
+      const element = document.getElementById("tttt");
+      element?.scrollIntoView({ behavior: 'smooth' });
+    },
   }
 ])
 </script>

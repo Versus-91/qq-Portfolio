@@ -1,5 +1,5 @@
 <template>
-    <UCard>
+    <UCard id="tttt">
         <template #default>
             <h1 class="uppercase font-bold border-b-2 border-b-blue-400 py-1 mb-2">Work Experience</h1>
             <div class="flex flex-row w-full mb-2 text-left">
@@ -10,7 +10,7 @@
                     <h4 class="text-blue-600 font-bold">10.2022 - 03.2025</h4>
                 </div>
             </div>
-            <div class="flex pl-4 mb-5">
+            <div class="flex pl-4 mb-5 pb-5">
                 <ol class="list-disc">
                     <li>Engineered a client-side ML platform using Pyodide, allowing users to build and train
                         models directly in the browser without code.</li>

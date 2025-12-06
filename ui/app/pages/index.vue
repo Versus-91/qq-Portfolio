@@ -1,5 +1,7 @@
 <template>
-    <UContainer class="mt-4">
+    <UPageHero id="about" title="Qader Qaribiyan"
+        description="Full Stack Developer with experience in full software developement life czcle from desing to deployement with focuse on C# ASP.NET Core and Vue js 3" />
+    <UContainer class="mt-4" id="projects">
         <UCard v-for="item in works_content" class="my-4">
             <template #header class="dark:bg-white">
                 <div class="h-5 font-bold">{{ item.title }}</div>
@@ -23,7 +25,7 @@
                     </div>
                     <div class="w-full md:w-1/3 justify-center" v-if="item.images?.length ?? 0 > 0">
                         <UCarousel fade v-slot="{ item }" :items="item.images" arrows class="w-full max-w-xs mx-auto">
-                            <NuxtImg :src="item" class="rounded-lg" />
+                            <img :src="item.trim()" class="rounded-lg" />
                         </UCarousel>
                     </div>
                 </div>
@@ -36,6 +38,8 @@
                     Demo</UButton>
             </template>
         </UCard>
+        <Resume ref="resumeRef" />
+
     </UContainer>
 </template>
 <script setup lang="ts">
@@ -52,8 +56,8 @@ const works_content =
                 'Interactive visualizations: Parallel coordinates, correlation matrices, model insights',
                 'HPC integration: Scales to large datasets via TU Dresden infrastructure',
                 'Full client-side execution using Pyodide + TensorFlow.js'],
-            images: ['https://carddecks.blob.core.windows.net/portfolio/Screenshot 2025-11-24 100327.jpg', 'https://carddecks.blob.core.windows.net/portfolio/ppc.jpg',
-                'https://carddecks.blob.core.windows.net/portfolio/Screenshot 2025-11-24 101328.jpg', 'https://carddecks.blob.core.windows.net/portfolio/pfi.jpg'
+            images: ['https://carddecks.blob.core.windows.net/portfolio/8.jpg', 'https://carddecks.blob.core.windows.net/portfolio/ppc.jpg',
+                'https://carddecks.blob.core.windows.net/portfolio/9.jpg', 'https://carddecks.blob.core.windows.net/portfolio/pfi.jpg'
             ],
             stack: "Vue.js 3, Pyodide, Bulma CSS, Scikit-learn, Plotly.js, HighCharts, TensorFlow.js",
             sourceLink: '',
