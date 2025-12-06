@@ -4,7 +4,8 @@
       <template #title>
         Portfolio
       </template>
-      <UNavigationMenu v-model="activeNavMenu" color="info" :items="items" />
+      <UNavigationMenu v-model="activeNavMenu" :highlight="highlightState" highlight-color="warning" variant="link"
+        color="info" :items="items" />
       <template #right>
         <UColorModeButton></UColorModeButton>
         <UButton color="neutral" variant="ghost" to="https://github.com/Versus-91" target="_blank"
@@ -21,14 +22,12 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
 
-let activeNavMenu = ref('');
-
-const childRef = useTemplateRef('nav')
+let activeNavMenu = ref('About');
+let highlightState = false;
 
 const items = computed<NavigationMenuItem[]>(() => [
   {
     label: 'Projects',
-    to: '/',
     active: activeNavMenu.value == 'Projects',
     onSelect(e) {
       activeNavMenu.value = 'Projects';
@@ -37,7 +36,6 @@ const items = computed<NavigationMenuItem[]>(() => [
     }
   }, {
     label: 'About me',
-    to: '/',
     active: activeNavMenu.value == 'About',
     onSelect(e) {
       activeNavMenu.value = 'About';
@@ -46,7 +44,6 @@ const items = computed<NavigationMenuItem[]>(() => [
     },
   }, {
     label: 'Resume',
-    to: '/',
     active: activeNavMenu.value == 'Resume',
     onSelect(e) {
       activeNavMenu.value = 'Resume';
