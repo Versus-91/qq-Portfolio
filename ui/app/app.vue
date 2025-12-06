@@ -21,7 +21,7 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
 
-let activeNavMenu = ref('Projects');
+let activeNavMenu = ref('');
 
 const childRef = useTemplateRef('nav')
 
