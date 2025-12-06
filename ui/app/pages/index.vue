@@ -1,7 +1,7 @@
 <template>
     <UPageHero id="about" title="Qader Qaribiyan"
         description="Full Stack Developer with M.Sc in CMS - Visual Computing and experience in the full software development lifecycle from design to deployment with a focus on C#, ASP.NET Core, and Vue.js 3." />
-    <UContainer class="mt-4" id="projects">
+    <UContainer id="projects">
         <UCard v-for="item in works_content" class="my-4">
             <template #header class="dark:bg-white">
                 <div class="h-5 font-bold">{{ item.title }}</div>
