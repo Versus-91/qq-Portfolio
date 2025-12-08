@@ -32,7 +32,7 @@
             </template>
             <template #footer>
                 <UButton color="neutral" icon="i-lucide-square-code" variant="outline" class="mx-1 dark:text-white-400 "
-                    :to="item.sourceLink" target="_blank">Source</UButton>
+                    :to="item.sourceLink" v-if="item.sourceLink" target="_blank">Source</UButton>
                 <UButton v-if="!!item.previewLink" color="primary" icon="i-lucide-play" :to="item.previewLink"
                     variant="outline" target="_blank">
                     Demo</UButton>
@@ -107,7 +107,7 @@ const works_content =
                 "Simulated 8 different scenarios and visualized the methods' explanations with the true DGP",
                 "Benchmarked the methods on 8 public datasets and 12 ML models"],
             stack: "scikit-learn, pandas, matplot, XGBoost",
-            sourceLink: 'https://github.com/Versus-91/blackboxofmachinelearning',
+            sourceLink: 'https://github.com/Versus-91/The-ML-Blackbox',
             placeHolderImage: 'images/t.webp',
             tags: ['Deep Learning']
         },
