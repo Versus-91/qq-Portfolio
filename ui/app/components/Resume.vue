@@ -56,12 +56,13 @@
             <Experience :title="'B.Sc. in Software Engineering, Imam Reza University'" :date="'12.2013 - 09.2017'">
             </Experience>
             <h1 class="uppercase font-bold border-b-2 border-b-blue-400 py-1 mb-2">Skills</h1>
-            <p>Programming languages: C#, Python, JavaScript/TypeScript</p>
-            <p>Backend: ASP.NET Core 8, Entity Framework, Django 5</p>
-            <p>Frontend: Vue.js 3, Angular 2+, Bootstrap 4, Bulma CSS</p>
-            <p>Cloud Platforms: Microsoft Azure (Key Vault, Blob Storage, SQL Database, App Service), DigitalOcean</p>
-            <p>Tools: Docker, Git, GitHub Actions, SQL Server Management Studio</p>
-            <p>Languages: German (B1), English (C1)</p>
+            <p><span class="font-bold">Programming languages:</span> C#, Python, JavaScript/TypeScript</p>
+            <p><span class="font-bold">Backend: </span>ASP.NET Core 8, Entity Framework, Django 5</p>
+            <p><span class="font-bold">Frontend:</span> Vue.js 3, Angular 2+, Bootstrap 4, Bulma CSS</p>
+            <p><span class="font-bold">Cloud Platforms: </span>Microsoft Azure (Key Vault, Blob Storage, SQL Database,
+                App Service), DigitalOcean</p>
+            <p><span class="font-bold">Tools:</span> Docker, Git, GitHub Actions, SQL Server Management Studio</p>
+            <p><span class="font-bold">Languages:</span> German (B1), English (C1)</p>
             <br />
         </template>
     </UCard>
