@@ -38,7 +38,7 @@
                     Demo</UButton>
             </template>
         </UCard>
-        <Resume ref="resumeRef" />
+        <!-- <Resume ref="resumeRef" /> -->
 
     </UContainer>
 </template>
