@@ -42,14 +42,6 @@ const items = computed<NavigationMenuItem[]>(() => [
       const element = document.getElementById("about");
       element?.scrollIntoView({ behavior: 'smooth' });
     },
-  }, {
-    label: 'Resume',
-    active: activeNavMenu.value == 'Resume',
-    onSelect(e) {
-      activeNavMenu.value = 'Resume';
-      const element = document.getElementById("tttt");
-      element?.scrollIntoView({ behavior: 'smooth' });
-    },
   }
 ])
 </script>
